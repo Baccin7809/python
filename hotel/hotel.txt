@@ -1,0 +1,2 @@
+{'nome': 'ahua', 'cpf': 3423, 'idade': 543, 'telefone': 32}
+{'nome': 'bruno', 'cpf': 123, 'idade': 3423, 'telefone': 213}
