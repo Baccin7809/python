@@ -33,29 +33,33 @@ def fazerCheckout(clienteFind):
         if clienteFind == eval(line)['nome']:
             chave = index
             flag =1
+    arquivo.close()
     if flag == 0:
         print("Cliente não encontrado")
-    arquivo.close()
-    try:
-        with open('hotel/hotel.txt', 'r') as fr:
-            # reading line by line
-            lines = fr.readlines()
-          
-            # pointer for position
-            ptr = 1
-      
-            # opening in writing mode
-            with open('hotel/hotel.txt', 'w') as fw:
-                for line in lines:
+    
+    else:
+        try:
+            with open('hotel/hotel.txt', 'r') as fr:
+                # reading line by line
+                lines = fr.readlines()
                 
-                    # we want to remove 5th line
-                    if ptr != chave:
-                        fw.write(line)
-                    ptr += 1
-        print("Deleted")
+          
+                # pointer for position
+                ptr = 1
       
-    except:
-        print("Oops! someting error")
+                # opening in writing mode
+                with open('hotel/hotel.txt', 'w') as fw:
+                    for line in lines:
+                
+                        # we want to remove 5th line
+                        if ptr != chave:
+                            fw.write(line)
+                        ptr += 1
+            print("Deleted")
+      
+        except:
+            print("Oops! someting error")
+    
     
     
     
