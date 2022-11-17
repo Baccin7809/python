@@ -16,7 +16,7 @@ while(menu!=0):
             print("*"*30)
             for c in lista_conta:
                 print(c)
-    menu = int(input("1. criar conta \n2. mostrar contas\n3.sair"))
+    menu = int(input("1. criar conta \n2. mostrar contas\n3.sair\n"))
     
 
 
