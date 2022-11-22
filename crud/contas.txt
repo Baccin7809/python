@@ -1,5 +1,1 @@
-bruno; 222; 20.0
-eduardo; 290; 89.0
-joao; 298; 900.0
-andre; 123; 200.0
-nico; 123; 20.0
+[<model.Conta object at 0x00000238C1D9BF70>]

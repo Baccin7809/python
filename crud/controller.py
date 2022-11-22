@@ -19,3 +19,40 @@ def read():
     contas.close
     return lista_contas
 
+def busca(find):
+    contas = open("contas.txt", "r") 
+    for conta in contas:
+        conta=conta.strip()
+        contaObjeto = conta.split(";")
+        if find == int(contaObjeto[1]):
+            flag=1
+            return flag
+        else:
+            flag = 0
+            return flag
+
+
+def update(conta_update:Conta):
+    lista_contas=[]
+    contas = open("contas.txt", "r") 
+    for conta in contas:
+        conta=conta.strip()
+        contaObjeto = conta.split(";")
+        if conta_update.numero == int(contaObjeto[1]):
+            lista_contas.append(conta_update)
+            
+        else:
+            lista_contas.append(conta)
+    
+    contas.close
+    contas = open("contas.txt", "w") 
+    contas.writelines(str(lista_contas))
+    contas.close
+
+       
+    
+    
+    
+    
+    
+
